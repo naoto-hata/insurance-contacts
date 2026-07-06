@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>保険会社連絡先一覧</title>
 <style>
 *{box-sizing:border-box}
@@ -39,168 +40,168 @@ h1{font-size:24px;margin:0 0 6px;letter-spacing:.02em}
 </head>
 <body>
 <header>
-  <h1>保険会社連絡先一覧</h1>
-  <div class="notice">社内用。会社名・担当者・電話番号で検索できます。番号をタップすると発信できます。<span class="confidential">社内限・顧客提示不可</span><br>生保：2026/6/4版／損保：2026/6/4版</div>
-  <input id="search" class="search" placeholder="会社名・担当者・電話番号で検索">
-  <div class="tabs">
-    <button class="tab active" data-tab="all">全部</button>
-    <button class="tab" data-tab="生保">生保</button>
-    <button class="tab" data-tab="損保">損保</button>
-    <button class="tab" data-tab="fav">★お気に入り</button>
-  </div>
-  <div class="toolbar"><span id="count"></span><button class="clear" type="button" id="clearSearch">検索クリア</button></div>
+<h1>保険会社連絡先一覧</h1>
+<div class="notice">社内用。会社名・担当者・電話番号で検索できます。番号をタップすると発信できます。<span class="confidential">社内限・顧客提示不可</span><br/>生保：2026/6/4版／損保：2026/6/4版</div>
+<input class="search" id="search" placeholder="会社名・担当者・電話番号で検索"/>
+<div class="tabs">
+<button class="tab active" data-tab="all">全部</button>
+<button class="tab" data-tab="生保">生保</button>
+<button class="tab" data-tab="損保">損保</button>
+<button class="tab" data-tab="fav">★お気に入り</button>
+</div>
+<div class="toolbar"><span id="count"></span><button class="clear" id="clearSearch" type="button">検索クリア</button></div>
 </header>
 <main>
-  <div id="grid" class="grid">
-<article class="card" data-type="生保" data-company="あいおい" data-search="生保 あいおい 浜松生保支社 757468  木村 勇貴 様 090-3470-7106 営業アシストセンター 0120-321-272 代理店請求申し出デスク 0120-321-614">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">あいおい</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松生保支社<br>コード：757468<br><span class="person">木村 勇貴 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:09034707106"><span class="label">📱 木村 勇貴 様</span><br><span class="num">090-3470-7106</span></a><a class="btn" href="tel:0120321272"><span class="label">☎️ 営業アシストセンター</span><br><span class="num">0120-321-272</span></a><a class="btn" href="tel:0120321614"><span class="label">☎️ 代理店請求申し出デスク</span><br><span class="num">0120-321-614</span></a></div>
+<div class="grid" id="grid">
+<article class="card" data-company="あいおい" data-search="生保 あいおい 浜松生保支社 757468  木村 勇貴 様 090-3470-7106 営業アシストセンター 0120-321-272 代理店請求申し出デスク 0120-321-614" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">あいおい</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松生保支社<br/>コード：757468<br/><span class="person">木村 勇貴 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:09034707106"><span class="label">📱 木村 勇貴 様</span><br/><span class="num">090-3470-7106</span></a><a class="btn" href="tel:0120321272"><span class="label">☎️ 営業アシストセンター</span><br/><span class="num">0120-321-272</span></a><a class="btn" href="tel:0120321614"><span class="label">☎️ 代理店請求申し出デスク</span><br/><span class="num">0120-321-614</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="アクサ" data-search="生保 アクサ 静岡パートナービジネス営業部 59689169  斎藤 優哉 様 070-7602-4010 営業部代表 054-272-0333 代理店専用：エージェントビジネスセンター 0120-995-004">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">アクサ</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：静岡パートナービジネス営業部<br>コード：59689169<br><span class="person">斎藤 優哉 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:07076024010"><span class="label">📱 斎藤 優哉 様</span><br><span class="num">070-7602-4010</span></a><a class="btn" href="tel:0542720333"><span class="label">☎️ 営業部代表</span><br><span class="num">054-272-0333</span></a><a class="btn" href="tel:0120995004"><span class="label">☎️ 代理店専用：エージェントビジネスセンター</span><br><span class="num">0120-995-004</span></a></div>
+<article class="card" data-company="アクサ" data-search="生保 アクサ 静岡パートナービジネス営業部 59689169  斎藤 優哉 様 070-7602-4010 営業部代表 054-272-0333 代理店専用：エージェントビジネスセンター 0120-995-004" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">アクサ</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：静岡パートナービジネス営業部<br/>コード：59689169<br/><span class="person">斎藤 優哉 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:07076024010"><span class="label">📱 斎藤 優哉 様</span><br/><span class="num">070-7602-4010</span></a><a class="btn" href="tel:0542720333"><span class="label">☎️ 営業部代表</span><br/><span class="num">054-272-0333</span></a><a class="btn" href="tel:0120995004"><span class="label">☎️ 代理店専用：エージェントビジネスセンター</span><br/><span class="num">0120-995-004</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="アフラック" data-search="生保 アフラック 大型法人営業部 01-03925 出先コードは顧客ネット参照 辻 圭亮 様 080-7771-7071 営業部代表 03-6757-2605 アソシエイツサポートデスク 0120-555-634 ITヘルプデスク（AANET・デジモ操作） 0120-834-337 保険金課（給付請求） 050-3786-1010">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">アフラック</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：大型法人営業部<br>コード：01-03925<br>メモ：出先コードは顧客ネット参照<br><span class="person">辻 圭亮 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08077717071"><span class="label">📱 辻 圭亮 様</span><br><span class="num">080-7771-7071</span></a><a class="btn" href="tel:0367572605"><span class="label">☎️ 営業部代表</span><br><span class="num">03-6757-2605</span></a><a class="btn" href="tel:0120555634"><span class="label">☎️ アソシエイツサポートデスク</span><br><span class="num">0120-555-634</span></a><a class="btn" href="tel:0120834337"><span class="label">☎️ ITヘルプデスク（AANET・デジモ操作）</span><br><span class="num">0120-834-337</span></a><a class="btn" href="tel:05037861010"><span class="label">☎️ 保険金課（給付請求）</span><br><span class="num">050-3786-1010</span></a></div>
+<article class="card" data-company="アフラック" data-search="生保 アフラック 大型法人営業部 01-03925 出先コードは顧客ネット参照 辻 圭亮 様 080-7771-7071 営業部代表 03-6757-2605 アソシエイツサポートデスク 0120-555-634 ITヘルプデスク（AANET・デジモ操作） 0120-834-337 保険金課（給付請求） 050-3786-1010" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">アフラック</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：大型法人営業部<br/>コード：01-03925<br/>メモ：出先コードは顧客ネット参照<br/><span class="person">辻 圭亮 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08077717071"><span class="label">📱 辻 圭亮 様</span><br/><span class="num">080-7771-7071</span></a><a class="btn" href="tel:0367572605"><span class="label">☎️ 営業部代表</span><br/><span class="num">03-6757-2605</span></a><a class="btn" href="tel:0120555634"><span class="label">☎️ アソシエイツサポートデスク</span><br/><span class="num">0120-555-634</span></a><a class="btn" href="tel:0120834337"><span class="label">☎️ ITヘルプデスク（AANET・デジモ操作）</span><br/><span class="num">0120-834-337</span></a><a class="btn" href="tel:05037861010"><span class="label">☎️ 保険金課（給付請求）</span><br/><span class="num">050-3786-1010</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="あんしん" data-search="生保 あんしん 浜松生保支社 35Y2  澤谷 詠子 様 080-2371-1793 支社代表 053-454-8993 代理店総合フリーダイヤル（新契約関連、保全、保険金 等） 0120-202-181 変額保険専用ヘルプデスク 0120-713-287 Tnet ヘルプデスク 0120-950-601 Tnet 携帯用 050-3358-2051">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">あんしん</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松生保支社<br>コード：35Y2<br><span class="person">澤谷 詠子 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08023711793"><span class="label">📱 澤谷 詠子 様</span><br><span class="num">080-2371-1793</span></a><a class="btn" href="tel:0534548993"><span class="label">☎️ 支社代表</span><br><span class="num">053-454-8993</span></a><a class="btn" href="tel:0120202181"><span class="label">☎️ 代理店総合フリーダイヤル（新契約関連、保全、保険金 等）</span><br><span class="num">0120-202-181</span></a><a class="btn" href="tel:0120713287"><span class="label">☎️ 変額保険専用ヘルプデスク</span><br><span class="num">0120-713-287</span></a><a class="btn" href="tel:0120950601"><span class="label">☎️ Tnet ヘルプデスク</span><br><span class="num">0120-950-601</span></a><a class="btn" href="tel:05033582051"><span class="label">☎️ Tnet 携帯用</span><br><span class="num">050-3358-2051</span></a></div>
+<article class="card" data-company="あんしん" data-search="生保 あんしん 浜松生保支社 35Y2  澤谷 詠子 様 080-2371-1793 支社代表 053-454-8993 代理店総合フリーダイヤル（新契約関連、保全、保険金 等） 0120-202-181 変額保険専用ヘルプデスク 0120-713-287 Tnet ヘルプデスク 0120-950-601 Tnet 携帯用 050-3358-2051" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">あんしん</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松生保支社<br/>コード：35Y2<br/><span class="person">澤谷 詠子 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08023711793"><span class="label">📱 澤谷 詠子 様</span><br/><span class="num">080-2371-1793</span></a><a class="btn" href="tel:0534548993"><span class="label">☎️ 支社代表</span><br/><span class="num">053-454-8993</span></a><a class="btn" href="tel:0120202181"><span class="label">☎️ 代理店総合フリーダイヤル（新契約関連、保全、保険金 等）</span><br/><span class="num">0120-202-181</span></a><a class="btn" href="tel:0120713287"><span class="label">☎️ 変額保険専用ヘルプデスク</span><br/><span class="num">0120-713-287</span></a><a class="btn" href="tel:0120950601"><span class="label">☎️ Tnet ヘルプデスク</span><br/><span class="num">0120-950-601</span></a><a class="btn" href="tel:05033582051"><span class="label">☎️ Tnet 携帯用</span><br/><span class="num">050-3358-2051</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="エヌエヌ" data-search="生保 エヌエヌ 静岡営業部 3J47V  小島 佑介 様 080-3495-2112 営業部代表 054-272-7515 代理店サポートダイヤル 0120-339-115">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">エヌエヌ</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：静岡営業部<br>コード：3J47V<br><span class="person">小島 佑介 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08034952112"><span class="label">📱 小島 佑介 様</span><br><span class="num">080-3495-2112</span></a><a class="btn" href="tel:0542727515"><span class="label">☎️ 営業部代表</span><br><span class="num">054-272-7515</span></a><a class="btn" href="tel:0120339115"><span class="label">☎️ 代理店サポートダイヤル</span><br><span class="num">0120-339-115</span></a></div>
+<article class="card" data-company="エヌエヌ" data-search="生保 エヌエヌ 静岡営業部 3J47V  小島 佑介 様 080-3495-2112 営業部代表 054-272-7515 代理店サポートダイヤル 0120-339-115" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">エヌエヌ</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：静岡営業部<br/>コード：3J47V<br/><span class="person">小島 佑介 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08034952112"><span class="label">📱 小島 佑介 様</span><br/><span class="num">080-3495-2112</span></a><a class="btn" href="tel:0542727515"><span class="label">☎️ 営業部代表</span><br/><span class="num">054-272-7515</span></a><a class="btn" href="tel:0120339115"><span class="label">☎️ 代理店サポートダイヤル</span><br/><span class="num">0120-339-115</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="FWD" data-search="生保 FWD 東海支社 0016-9783  山岡 暁良 様 080-3462-6368 支社代表 052-238-1307 代理店サービスセンター 0120-220-943">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">FWD</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：東海支社<br>コード：0016-9783<br><span class="person">山岡 暁良 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08034626368"><span class="label">📱 山岡 暁良 様</span><br><span class="num">080-3462-6368</span></a><a class="btn" href="tel:0522381307"><span class="label">☎️ 支社代表</span><br><span class="num">052-238-1307</span></a><a class="btn" href="tel:0120220943"><span class="label">☎️ 代理店サービスセンター</span><br><span class="num">0120-220-943</span></a></div>
+<article class="card" data-company="FWD" data-search="生保 FWD 東海支社 0016-9783  山岡 暁良 様 080-3462-6368 支社代表 052-238-1307 代理店サービスセンター 0120-220-943" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">FWD</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：東海支社<br/>コード：0016-9783<br/><span class="person">山岡 暁良 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08034626368"><span class="label">📱 山岡 暁良 様</span><br/><span class="num">080-3462-6368</span></a><a class="btn" href="tel:0522381307"><span class="label">☎️ 支社代表</span><br/><span class="num">052-238-1307</span></a><a class="btn" href="tel:0120220943"><span class="label">☎️ 代理店サービスセンター</span><br/><span class="num">0120-220-943</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="オリックス" data-search="生保 オリックス テレマーケティング営業部 テレマ 92897／テレマ対象外 92898  鈴木 貴夫 様 070-4343-9241 営業部代表 03-6626-9922 代理店ヘルプデスク 0120-993-456 代理店システムサポートデスク 0120-003-214">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">オリックス</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：テレマーケティング営業部<br>コード：テレマ 92897／テレマ対象外 92898<br><span class="person">鈴木 貴夫 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:07043439241"><span class="label">📱 鈴木 貴夫 様</span><br><span class="num">070-4343-9241</span></a><a class="btn" href="tel:0366269922"><span class="label">☎️ 営業部代表</span><br><span class="num">03-6626-9922</span></a><a class="btn" href="tel:0120993456"><span class="label">☎️ 代理店ヘルプデスク</span><br><span class="num">0120-993-456</span></a><a class="btn" href="tel:0120003214"><span class="label">☎️ 代理店システムサポートデスク</span><br><span class="num">0120-003-214</span></a></div>
+<article class="card" data-company="オリックス" data-search="生保 オリックス テレマーケティング営業部 テレマ 92897／テレマ対象外 92898  鈴木 貴夫 様 070-4343-9241 営業部代表 03-6626-9922 代理店ヘルプデスク 0120-993-456 代理店システムサポートデスク 0120-003-214" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">オリックス</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：テレマーケティング営業部<br/>コード：テレマ 92897／テレマ対象外 92898<br/><span class="person">鈴木 貴夫 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:07043439241"><span class="label">📱 鈴木 貴夫 様</span><br/><span class="num">070-4343-9241</span></a><a class="btn" href="tel:0366269922"><span class="label">☎️ 営業部代表</span><br/><span class="num">03-6626-9922</span></a><a class="btn" href="tel:0120993456"><span class="label">☎️ 代理店ヘルプデスク</span><br/><span class="num">0120-993-456</span></a><a class="btn" href="tel:0120003214"><span class="label">☎️ 代理店システムサポートデスク</span><br/><span class="num">0120-003-214</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="ジブラルタ" data-search="生保 ジブラルタ 静岡営業部 9975914／0048  加藤 明莉 様 080-4006-9367 営業部代表 054-205-6011 代理店デスク 0120-22-3746">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">ジブラルタ</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：静岡営業部<br>コード：9975914／0048<br><span class="person">加藤 明莉 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08040069367"><span class="label">📱 加藤 明莉 様</span><br><span class="num">080-4006-9367</span></a><a class="btn" href="tel:0542056011"><span class="label">☎️ 営業部代表</span><br><span class="num">054-205-6011</span></a><a class="btn" href="tel:0120223746"><span class="label">☎️ 代理店デスク</span><br><span class="num">0120-22-3746</span></a></div>
+<article class="card" data-company="ジブラルタ" data-search="生保 ジブラルタ 静岡営業部 9975914／0048  加藤 明莉 様 080-4006-9367 営業部代表 054-205-6011 代理店デスク 0120-22-3746" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">ジブラルタ</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：静岡営業部<br/>コード：9975914／0048<br/><span class="person">加藤 明莉 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08040069367"><span class="label">📱 加藤 明莉 様</span><br/><span class="num">080-4006-9367</span></a><a class="btn" href="tel:0542056011"><span class="label">☎️ 営業部代表</span><br/><span class="num">054-205-6011</span></a><a class="btn" href="tel:0120223746"><span class="label">☎️ 代理店デスク</span><br/><span class="num">0120-22-3746</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="ソニー" data-search="生保 ソニー 静岡営業所 410700096  牧野 壮留 様 050-3128-3415 営業所代表 054-652-0111 PCヘルプデスク 03-5216-3980 保険事務サービスデスク 03-6831-2500">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">ソニー</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：静岡営業所<br>コード：410700096<br><span class="person">牧野 壮留 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:05031283415"><span class="label">📱 牧野 壮留 様</span><br><span class="num">050-3128-3415</span></a><a class="btn" href="tel:0546520111"><span class="label">☎️ 営業所代表</span><br><span class="num">054-652-0111</span></a><a class="btn" href="tel:0352163980"><span class="label">☎️ PCヘルプデスク</span><br><span class="num">03-5216-3980</span></a><a class="btn" href="tel:0368312500"><span class="label">☎️ 保険事務サービスデスク</span><br><span class="num">03-6831-2500</span></a></div>
+<article class="card" data-company="ソニー" data-search="生保 ソニー 静岡営業所 410700096  牧野 壮留 様 050-3128-3415 営業所代表 054-652-0111 PCヘルプデスク 03-5216-3980 保険事務サービスデスク 03-6831-2500" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">ソニー</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：静岡営業所<br/>コード：410700096<br/><span class="person">牧野 壮留 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:05031283415"><span class="label">📱 牧野 壮留 様</span><br/><span class="num">050-3128-3415</span></a><a class="btn" href="tel:0546520111"><span class="label">☎️ 営業所代表</span><br/><span class="num">054-652-0111</span></a><a class="btn" href="tel:0352163980"><span class="label">☎️ PCヘルプデスク</span><br/><span class="num">03-5216-3980</span></a><a class="btn" href="tel:0368312500"><span class="label">☎️ 保険事務サービスデスク</span><br/><span class="num">03-6831-2500</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="チューリッヒ" data-search="生保 チューリッヒ 営業本部 15514  熊田 良祐 様 080-7361-3058 代理店ヘルプデスク 0120-135-195">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">チューリッヒ</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：営業本部<br>コード：15514<br><span class="person">熊田 良祐 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08073613058"><span class="label">📱 熊田 良祐 様</span><br><span class="num">080-7361-3058</span></a><a class="btn" href="tel:0120135195"><span class="label">☎️ 代理店ヘルプデスク</span><br><span class="num">0120-135-195</span></a></div>
+<article class="card" data-company="チューリッヒ" data-search="生保 チューリッヒ 営業本部 15514  熊田 良祐 様 080-7361-3058 代理店ヘルプデスク 0120-135-195" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">チューリッヒ</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：営業本部<br/>コード：15514<br/><span class="person">熊田 良祐 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08073613058"><span class="label">📱 熊田 良祐 様</span><br/><span class="num">080-7361-3058</span></a><a class="btn" href="tel:0120135195"><span class="label">☎️ 代理店ヘルプデスク</span><br/><span class="num">0120-135-195</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="なないろ" data-search="生保 なないろ 東海支社 0199 0048  近藤 あき 様 ※リモート対応 090-9316-8744 代理店サポートデスク 0120-000-758">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">なないろ</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：東海支社<br>コード：0199 0048<br><span class="person">近藤 あき 様 ※リモート対応</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:09093168744"><span class="label">📱 近藤 あき 様 ※リモート対応</span><br><span class="num">090-9316-8744</span></a><a class="btn" href="tel:0120000758"><span class="label">☎️ 代理店サポートデスク</span><br><span class="num">0120-000-758</span></a></div>
+<article class="card" data-company="なないろ" data-search="生保 なないろ 東海支社 0199 0048  近藤 あき 様 ※リモート対応 090-9316-8744 代理店サポートデスク 0120-000-758" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">なないろ</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：東海支社<br/>コード：0199 0048<br/><span class="person">近藤 あき 様 ※リモート対応</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:09093168744"><span class="label">📱 近藤 あき 様 ※リモート対応</span><br/><span class="num">090-9316-8744</span></a><a class="btn" href="tel:0120000758"><span class="label">☎️ 代理店サポートデスク</span><br/><span class="num">0120-000-758</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="日本生命／はなさく" data-search="生保 日本生命／はなさく 浜松代理店営業部 6550047  小室 満弓 様 080-5886-0845 営業部代表 053-453-8351 日本生命代理店サポートセンター 0120-948-574 はなさく代理店サポートセンター 0120-8739-82">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">日本生命／はなさく</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松代理店営業部<br>コード：6550047<br><span class="person">小室 満弓 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08058860845"><span class="label">📱 小室 満弓 様</span><br><span class="num">080-5886-0845</span></a><a class="btn" href="tel:0534538351"><span class="label">☎️ 営業部代表</span><br><span class="num">053-453-8351</span></a><a class="btn" href="tel:0120948574"><span class="label">☎️ 日本生命代理店サポートセンター</span><br><span class="num">0120-948-574</span></a><a class="btn" href="tel:0120873982"><span class="label">☎️ はなさく代理店サポートセンター</span><br><span class="num">0120-8739-82</span></a></div>
+<article class="card" data-company="日本生命／はなさく" data-search="生保 日本生命／はなさく 浜松代理店営業部 6550047  小室 満弓 様 080-5886-0845 営業部代表 053-453-8351 日本生命代理店サポートセンター 0120-948-574 はなさく代理店サポートセンター 0120-8739-82" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">日本生命／はなさく</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松代理店営業部<br/>コード：6550047<br/><span class="person">小室 満弓 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08058860845"><span class="label">📱 小室 満弓 様</span><br/><span class="num">080-5886-0845</span></a><a class="btn" href="tel:0534538351"><span class="label">☎️ 営業部代表</span><br/><span class="num">053-453-8351</span></a><a class="btn" href="tel:0120948574"><span class="label">☎️ 日本生命代理店サポートセンター</span><br/><span class="num">0120-948-574</span></a><a class="btn" href="tel:0120873982"><span class="label">☎️ はなさく代理店サポートセンター</span><br/><span class="num">0120-8739-82</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="第一ネオ生命／第一フロンティア" data-search="生保 第一ネオ生命 ネオファースト 第一フロンティア 浜松支社 61056 0048  筈井 元蔵 様 080-8483-3243 第一ネオ生命代理店サポートデスク 0800-0005-201 第一フロンティア代理店サポートデスク 0120-00-3361">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">第一ネオ生命／第一フロンティア</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松支社<br>コード：61056 0048<br><span class="person">筈井 元蔵 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08084833243"><span class="label">📱 筈井 元蔵 様</span><br><span class="num">080-8483-3243</span></a><a class="btn" href="tel:08000005201"><span class="label">☎️ 第一ネオ生命代理店サポートデスク</span><br><span class="num">0800-0005-201</span></a><a class="btn" href="tel:0120003361"><span class="label">☎️ 第一フロンティア代理店サポートデスク</span><br><span class="num">0120-00-3361</span></a></div>
+<article class="card" data-company="第一ネオ生命／第一フロンティア" data-search="生保 第一ネオ生命 ネオファースト 第一フロンティア 浜松支社 61056 0048  筈井 元蔵 様 080-8483-3243 第一ネオ生命代理店サポートデスク 0800-0005-201 第一フロンティア代理店サポートデスク 0120-00-3361" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">第一ネオ生命／第一フロンティア</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松支社<br/>コード：61056 0048<br/><span class="person">筈井 元蔵 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08084833243"><span class="label">📱 筈井 元蔵 様</span><br/><span class="num">080-8483-3243</span></a><a class="btn" href="tel:08000005201"><span class="label">☎️ 第一ネオ生命代理店サポートデスク</span><br/><span class="num">0800-0005-201</span></a><a class="btn" href="tel:0120003361"><span class="label">☎️ 第一フロンティア代理店サポートデスク</span><br/><span class="num">0120-00-3361</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="ひまわり" data-search="生保 ひまわり 浜松支社 BP574  川口 徹也 様 080-7062-2218 小森田 剛也 様 080-4129-9147 代表電話 050-2016-8577 営業サポートセンター（新契約） 0120-050-611 営業サポートセンター（既契約） 0120-310-614 不備照会（新契約／収納・保全／保険金） 0120-730-650 SJ-NETユーザーデスク 0120-115-565 SJ-NET 携帯用 087-883-8351">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">ひまわり</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松支社<br>コード：BP574<br><span class="person">川口 徹也 様 / 小森田 剛也 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08070622218"><span class="label">📱 川口 徹也 様</span><br><span class="num">080-7062-2218</span></a><a class="btn personBtn" href="tel:08041299147"><span class="label">📱 小森田 剛也 様</span><br><span class="num">080-4129-9147</span></a><a class="btn" href="tel:05020168577"><span class="label">☎️ 代表電話</span><br><span class="num">050-2016-8577</span></a><a class="btn" href="tel:0120050611"><span class="label">☎️ 営業サポートセンター（新契約）</span><br><span class="num">0120-050-611</span></a><a class="btn" href="tel:0120310614"><span class="label">☎️ 営業サポートセンター（既契約）</span><br><span class="num">0120-310-614</span></a><a class="btn" href="tel:0120730650"><span class="label">☎️ 不備照会（新契約／収納・保全／保険金）</span><br><span class="num">0120-730-650</span></a><a class="btn" href="tel:0120115565"><span class="label">☎️ SJ-NETユーザーデスク</span><br><span class="num">0120-115-565</span></a><a class="btn" href="tel:0878838351"><span class="label">☎️ SJ-NET 携帯用</span><br><span class="num">087-883-8351</span></a></div>
+<article class="card" data-company="ひまわり" data-search="生保 ひまわり 浜松支社 BP574  川口 徹也 様 080-7062-2218 小森田 剛也 様 080-4129-9147 代表電話 050-2016-8577 営業サポートセンター（新契約） 0120-050-611 営業サポートセンター（既契約） 0120-310-614 不備照会（新契約／収納・保全／保険金） 0120-730-650 SJ-NETユーザーデスク 0120-115-565 SJ-NET 携帯用 087-883-8351" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">ひまわり</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松支社<br/>コード：BP574<br/><span class="person">川口 徹也 様 / 小森田 剛也 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08070622218"><span class="label">📱 川口 徹也 様</span><br/><span class="num">080-7062-2218</span></a><a class="btn personBtn" href="tel:08041299147"><span class="label">📱 小森田 剛也 様</span><br/><span class="num">080-4129-9147</span></a><a class="btn" href="tel:05020168577"><span class="label">☎️ 代表電話</span><br/><span class="num">050-2016-8577</span></a><a class="btn" href="tel:0120050611"><span class="label">☎️ 営業サポートセンター（新契約）</span><br/><span class="num">0120-050-611</span></a><a class="btn" href="tel:0120310614"><span class="label">☎️ 営業サポートセンター（既契約）</span><br/><span class="num">0120-310-614</span></a><a class="btn" href="tel:0120730650"><span class="label">☎️ 不備照会（新契約／収納・保全／保険金）</span><br/><span class="num">0120-730-650</span></a><a class="btn" href="tel:0120115565"><span class="label">☎️ SJ-NETユーザーデスク</span><br/><span class="num">0120-115-565</span></a><a class="btn" href="tel:0878838351"><span class="label">☎️ SJ-NET 携帯用</span><br/><span class="num">087-883-8351</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="マニュライフ" data-search="生保 マニュライフ 中部営業部 904127  香川 太資 様 080-5984-1921 代理店サービスデスク 0120-95-3939">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">マニュライフ</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：中部営業部<br>コード：904127<br><span class="person">香川 太資 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08059841921"><span class="label">📱 香川 太資 様</span><br><span class="num">080-5984-1921</span></a><a class="btn" href="tel:0120953939"><span class="label">☎️ 代理店サービスデスク</span><br><span class="num">0120-95-3939</span></a></div>
+<article class="card" data-company="マニュライフ" data-search="生保 マニュライフ 中部営業部 904127  香川 太資 様 080-5984-1921 代理店サービスデスク 0120-95-3939" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">マニュライフ</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：中部営業部<br/>コード：904127<br/><span class="person">香川 太資 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08059841921"><span class="label">📱 香川 太資 様</span><br/><span class="num">080-5984-1921</span></a><a class="btn" href="tel:0120953939"><span class="label">☎️ 代理店サービスデスク</span><br/><span class="num">0120-95-3939</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="明治安田" data-search="生保 明治安田 浜松代理店営業部 00031  藤原 勝也 様（営業所に連絡）  営業部代表 053-452-6117 営業サポートオフィス 0120-801-840">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">明治安田</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松代理店営業部<br>コード：00031<br><span class="person">藤原 勝也 様（営業所に連絡）</span></div>
-  <div class="actions"><a class="btn" href="tel:0534526117"><span class="label">☎️ 営業部代表</span><br><span class="num">053-452-6117</span></a><a class="btn" href="tel:0120801840"><span class="label">☎️ 営業サポートオフィス</span><br><span class="num">0120-801-840</span></a></div>
+<article class="card" data-company="明治安田" data-search="生保 明治安田 浜松代理店営業部 00031  藤原 勝也 様（営業所に連絡）  営業部代表 053-452-6117 営業サポートオフィス 0120-801-840" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">明治安田</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松代理店営業部<br/>コード：00031<br/><span class="person">藤原 勝也 様（営業所に連絡）</span></div>
+<div class="actions"><a class="btn" href="tel:0534526117"><span class="label">☎️ 営業部代表</span><br/><span class="num">053-452-6117</span></a><a class="btn" href="tel:0120801840"><span class="label">☎️ 営業サポートオフィス</span><br/><span class="num">0120-801-840</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="メットライフ" data-search="生保 メットライフ 浜松支社   横山 英輔 様 070-7488-3311 支社代表 053-456-7201 Pコール（ヘルプデスク） 0120-945-779">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">メットライフ</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松支社<br><span class="person">横山 英輔 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:07074883311"><span class="label">📱 横山 英輔 様</span><br><span class="num">070-7488-3311</span></a><a class="btn" href="tel:0534567201"><span class="label">☎️ 支社代表</span><br><span class="num">053-456-7201</span></a><a class="btn" href="tel:0120945779"><span class="label">☎️ Pコール（ヘルプデスク）</span><br><span class="num">0120-945-779</span></a></div>
+<article class="card" data-company="メットライフ" data-search="生保 メットライフ 浜松支社   横山 英輔 様 070-7488-3311 支社代表 053-456-7201 Pコール（ヘルプデスク） 0120-945-779" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">メットライフ</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松支社<br/><span class="person">横山 英輔 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:07074883311"><span class="label">📱 横山 英輔 様</span><br/><span class="num">070-7488-3311</span></a><a class="btn" href="tel:0534567201"><span class="label">☎️ 支社代表</span><br/><span class="num">053-456-7201</span></a><a class="btn" href="tel:0120945779"><span class="label">☎️ Pコール（ヘルプデスク）</span><br/><span class="num">0120-945-779</span></a></div>
 </article>
-<article class="card" data-type="生保" data-company="メディケア" data-search="生保 メディケア 営業推進部 3008643  千野 拓也 様 070-1585-8776 サポートデスク 0120-860-492 保全専用ダイヤル 0120-860-391">
-  <div class="cardTop"><div><div class="badge">生保</div><h2 class="company">メディケア</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：営業推進部<br>コード：3008643<br><span class="person">千野 拓也 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:07015858776"><span class="label">📱 千野 拓也 様</span><br><span class="num">070-1585-8776</span></a><a class="btn" href="tel:0120860492"><span class="label">☎️ サポートデスク</span><br><span class="num">0120-860-492</span></a><a class="btn" href="tel:0120860391"><span class="label">☎️ 保全専用ダイヤル</span><br><span class="num">0120-860-391</span></a></div>
+<article class="card" data-company="メディケア" data-search="生保 メディケア 営業推進部 3008643  千野 拓也 様 070-1585-8776 サポートデスク 0120-860-492 保全専用ダイヤル 0120-860-391" data-type="生保">
+<div class="cardTop"><div><div class="badge">生保</div><h2 class="company">メディケア</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：営業推進部<br/>コード：3008643<br/><span class="person">千野 拓也 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:07015858776"><span class="label">📱 千野 拓也 様</span><br/><span class="num">070-1585-8776</span></a><a class="btn" href="tel:0120860492"><span class="label">☎️ サポートデスク</span><br/><span class="num">0120-860-492</span></a><a class="btn" href="tel:0120860391"><span class="label">☎️ 保全専用ダイヤル</span><br/><span class="num">0120-860-391</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="三井住友" data-search="損保 三井住友 愛知第四支社 AED62-PA02  営業：加藤 里奈 様 080-8084-2967 事務：小八重 直美 様 080-8438-7891 支社代表 052-223-4578 損保販売サポートデスク 0120-220-115 システムヘルプデスク 050-3652-7549">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">三井住友</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：愛知第四支社<br>コード：AED62-PA02<br><span class="person">営業：加藤 里奈 様 / 事務：小八重 直美 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08080842967"><span class="label">📱 営業：加藤 里奈 様</span><br><span class="num">080-8084-2967</span></a><a class="btn personBtn" href="tel:08084387891"><span class="label">📱 事務：小八重 直美 様</span><br><span class="num">080-8438-7891</span></a><a class="btn" href="tel:0522234578"><span class="label">☎️ 支社代表</span><br><span class="num">052-223-4578</span></a><a class="btn" href="tel:0120220115"><span class="label">☎️ 損保販売サポートデスク</span><br><span class="num">0120-220-115</span></a><a class="btn" href="tel:05036527549"><span class="label">☎️ システムヘルプデスク</span><br><span class="num">050-3652-7549</span></a></div>
+<article class="card" data-company="三井住友" data-search="損保 三井住友 愛知第四支社 AED62-PA02  営業：奥住様  事務：小八重 直美 様 080-8438-7891 支社代表 052-223-4578 損保販売サポートデスク 0120-220-115 システムヘルプデスク 050-3652-7549" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">三井住友</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：愛知第四支社<br/>コード：AED62-PA02<br/><span class="person">営業：奥住様 / 事務：小八重 直美 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08084387891"><span class="label">📱 事務：小八重 直美 様</span><br/><span class="num">080-8438-7891</span></a><a class="btn" href="tel:0522234578"><span class="label">☎️ 支社代表</span><br/><span class="num">052-223-4578</span></a><a class="btn" href="tel:0120220115"><span class="label">☎️ 損保販売サポートデスク</span><br/><span class="num">0120-220-115</span></a><a class="btn" href="tel:05036527549"><span class="label">☎️ システムヘルプデスク</span><br/><span class="num">050-3652-7549</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="東京海上" data-search="損保 東京海上 札幌中央支店 札幌支社 66D2-8900  Tnet ヘルプデスク 0120-950-601 Tnet 携帯用 050-3358-2051">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">東京海上</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：札幌中央支店 札幌支社<br>コード：66D2-8900</div>
-  <div class="actions"><a class="btn" href="tel:0120950601"><span class="label">☎️ Tnet ヘルプデスク</span><br><span class="num">0120-950-601</span></a><a class="btn" href="tel:05033582051"><span class="label">☎️ Tnet 携帯用</span><br><span class="num">050-3358-2051</span></a></div>
+<article class="card" data-company="東京海上" data-search="損保 東京海上 札幌中央支店 札幌支社 66D2-8900  Tnet ヘルプデスク 0120-950-601 Tnet 携帯用 050-3358-2051" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">東京海上</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：札幌中央支店 札幌支社<br/>コード：66D2-8900</div>
+<div class="actions"><a class="btn" href="tel:0120950601"><span class="label">☎️ Tnet ヘルプデスク</span><br/><span class="num">0120-950-601</span></a><a class="btn" href="tel:05033582051"><span class="label">☎️ Tnet 携帯用</span><br/><span class="num">050-3358-2051</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="AIG" data-search="損保 AIG 浜松支店 202BK3  岡庭 朋江 様 090-9823-3697 支店代表 053-454-0321 ライフプロ専用サポートセンター 0120-791-326 エラー照会 0120-803-364">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">AIG</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：浜松支店<br>コード：202BK3<br><span class="person">岡庭 朋江 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:09098233697"><span class="label">📱 岡庭 朋江 様</span><br><span class="num">090-9823-3697</span></a><a class="btn" href="tel:0534540321"><span class="label">☎️ 支店代表</span><br><span class="num">053-454-0321</span></a><a class="btn" href="tel:0120791326"><span class="label">☎️ ライフプロ専用サポートセンター</span><br><span class="num">0120-791-326</span></a><a class="btn" href="tel:0120803364"><span class="label">☎️ エラー照会</span><br><span class="num">0120-803-364</span></a></div>
+<article class="card" data-company="AIG" data-search="損保 AIG 浜松支店 202BK3  岡庭 朋江 様 090-9823-3697 支店代表 053-454-0321 ライフプロ専用サポートセンター 0120-791-326 エラー照会 0120-803-364" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">AIG</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：浜松支店<br/>コード：202BK3<br/><span class="person">岡庭 朋江 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:09098233697"><span class="label">📱 岡庭 朋江 様</span><br/><span class="num">090-9823-3697</span></a><a class="btn" href="tel:0534540321"><span class="label">☎️ 支店代表</span><br/><span class="num">053-454-0321</span></a><a class="btn" href="tel:0120791326"><span class="label">☎️ ライフプロ専用サポートセンター</span><br/><span class="num">0120-791-326</span></a><a class="btn" href="tel:0120803364"><span class="label">☎️ エラー照会</span><br/><span class="num">0120-803-364</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="楽天" data-search="損保 楽天  9404-286  代理店サポートセンター 050-5434-8585">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">楽天</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">コード：9404-286</div>
-  <div class="actions"><a class="btn" href="tel:05054348585"><span class="label">☎️ 代理店サポートセンター</span><br><span class="num">050-5434-8585</span></a></div>
+<article class="card" data-company="楽天" data-search="損保 楽天  9404-286  代理店サポートセンター 050-5434-8585" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">楽天</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">コード：9404-286</div>
+<div class="actions"><a class="btn" href="tel:05054348585"><span class="label">☎️ 代理店サポートセンター</span><br/><span class="num">050-5434-8585</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="損保ジャパン" data-search="損保 損保ジャパン  B52W0-3673  代理店システムユーザーデスク 0120-115-565 携帯用 087-883-8351">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">損保ジャパン</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">コード：B52W0-3673</div>
-  <div class="actions"><a class="btn" href="tel:0120115565"><span class="label">☎️ 代理店システムユーザーデスク</span><br><span class="num">0120-115-565</span></a><a class="btn" href="tel:0878838351"><span class="label">☎️ 携帯用</span><br><span class="num">087-883-8351</span></a></div>
+<article class="card" data-company="損保ジャパン" data-search="損保 損保ジャパン  B52W0-3673  代理店システムユーザーデスク 0120-115-565 携帯用 087-883-8351" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">損保ジャパン</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">コード：B52W0-3673</div>
+<div class="actions"><a class="btn" href="tel:0120115565"><span class="label">☎️ 代理店システムユーザーデスク</span><br/><span class="num">0120-115-565</span></a><a class="btn" href="tel:0878838351"><span class="label">☎️ 携帯用</span><br/><span class="num">087-883-8351</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="ニッセイ同和" data-search="損保 ニッセイ同和 名古屋第一支社 RFF60-K67Z  営業：別役 様 080-5937-9863 事務：野嶋 様 090-2748-2533 支社代表 050-3461-8229 代理店システムヘルプデスク 0476-31-9391">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">ニッセイ同和</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：名古屋第一支社<br>コード：RFF60-K67Z<br><span class="person">営業：別役 様 / 事務：野嶋 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08059379863"><span class="label">📱 営業：別役 様</span><br><span class="num">080-5937-9863</span></a><a class="btn personBtn" href="tel:09027482533"><span class="label">📱 事務：野嶋 様</span><br><span class="num">090-2748-2533</span></a><a class="btn" href="tel:05034618229"><span class="label">☎️ 支社代表</span><br><span class="num">050-3461-8229</span></a><a class="btn" href="tel:0476319391"><span class="label">☎️ 代理店システムヘルプデスク</span><br><span class="num">0476-31-9391</span></a></div>
+<article class="card" data-company="ニッセイ同和" data-search="損保 ニッセイ同和 名古屋第一支社 RFF60-K67Z  営業：別役 様 080-5937-9863 事務：野嶋 様 090-2748-2533 支社代表 050-3461-8229 代理店システムヘルプデスク 0476-31-9391" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">ニッセイ同和</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：名古屋第一支社<br/>コード：RFF60-K67Z<br/><span class="person">営業：別役 様 / 事務：野嶋 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08059379863"><span class="label">📱 営業：別役 様</span><br/><span class="num">080-5937-9863</span></a><a class="btn personBtn" href="tel:09027482533"><span class="label">📱 事務：野嶋 様</span><br/><span class="num">090-2748-2533</span></a><a class="btn" href="tel:05034618229"><span class="label">☎️ 支社代表</span><br/><span class="num">050-3461-8229</span></a><a class="btn" href="tel:0476319391"><span class="label">☎️ 代理店システムヘルプデスク</span><br/><span class="num">0476-31-9391</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="セコム" data-search="損保 セコム 札幌営業課 0612928／事業所コード 0015  メディコム・コンタクトセンター 0120-756-286 サポートセンター：火災・自動車 0120-756-295">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">セコム</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：札幌営業課<br>コード：0612928／事業所コード 0015</div>
-  <div class="actions"><a class="btn" href="tel:0120756286"><span class="label">☎️ メディコム・コンタクトセンター</span><br><span class="num">0120-756-286</span></a><a class="btn" href="tel:0120756295"><span class="label">☎️ サポートセンター：火災・自動車</span><br><span class="num">0120-756-295</span></a></div>
+<article class="card" data-company="セコム" data-search="損保 セコム 札幌営業課 0612928／事業所コード 0015  メディコム・コンタクトセンター 0120-756-286 サポートセンター：火災・自動車 0120-756-295" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">セコム</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：札幌営業課<br/>コード：0612928／事業所コード 0015</div>
+<div class="actions"><a class="btn" href="tel:0120756286"><span class="label">☎️ メディコム・コンタクトセンター</span><br/><span class="num">0120-756-286</span></a><a class="btn" href="tel:0120756295"><span class="label">☎️ サポートセンター：火災・自動車</span><br/><span class="num">0120-756-295</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="アイペット" data-search="損保 アイペット 中日本営業部 11805105A  カナザワ 様 080-8824-4669">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">アイペット</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta">部署：中日本営業部<br>コード：11805105A<br><span class="person">カナザワ 様</span></div>
-  <div class="actions"><a class="btn personBtn" href="tel:08088244669"><span class="label">📱 カナザワ 様</span><br><span class="num">080-8824-4669</span></a></div>
+<article class="card" data-company="アイペット" data-search="損保 アイペット 中日本営業部 11805105A  カナザワ 様 080-8824-4669" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">アイペット</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta">部署：中日本営業部<br/>コード：11805105A<br/><span class="person">カナザワ 様</span></div>
+<div class="actions"><a class="btn personBtn" href="tel:08088244669"><span class="label">📱 カナザワ 様</span><br/><span class="num">080-8824-4669</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="ソニー損保" data-search="損保 ソニー損保    代理店専用：自動車 0120-609-032 代理店専用：火災 0120-957-693 契約者専用：自動車（見積もり） 0120-556-032 契約者専用：火災（見積もり） 0120-957-693">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">ソニー損保</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta"></div>
-  <div class="actions"><a class="btn" href="tel:0120609032"><span class="label">☎️ 代理店専用：自動車</span><br><span class="num">0120-609-032</span></a><a class="btn" href="tel:0120957693"><span class="label">☎️ 代理店専用：火災</span><br><span class="num">0120-957-693</span></a><a class="btn" href="tel:0120556032"><span class="label">☎️ 契約者専用：自動車（見積もり）</span><br><span class="num">0120-556-032</span></a><a class="btn" href="tel:0120957693"><span class="label">☎️ 契約者専用：火災（見積もり）</span><br><span class="num">0120-957-693</span></a></div>
+<article class="card" data-company="ソニー損保" data-search="損保 ソニー損保    代理店専用：自動車 0120-609-032 代理店専用：火災 0120-957-693 契約者専用：自動車（見積もり） 0120-556-032 契約者専用：火災（見積もり） 0120-957-693" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">ソニー損保</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta"></div>
+<div class="actions"><a class="btn" href="tel:0120609032"><span class="label">☎️ 代理店専用：自動車</span><br/><span class="num">0120-609-032</span></a><a class="btn" href="tel:0120957693"><span class="label">☎️ 代理店専用：火災</span><br/><span class="num">0120-957-693</span></a><a class="btn" href="tel:0120556032"><span class="label">☎️ 契約者専用：自動車（見積もり）</span><br/><span class="num">0120-556-032</span></a><a class="btn" href="tel:0120957693"><span class="label">☎️ 契約者専用：火災（見積もり）</span><br/><span class="num">0120-957-693</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="パブレPCヘルプデスク" data-search="損保 パブレPCヘルプデスク    貸与PCのWindows不具合等 011-632-5140">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">パブレPCヘルプデスク</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta"></div>
-  <div class="actions"><a class="btn" href="tel:0116325140"><span class="label">☎️ 貸与PCのWindows不具合等</span><br><span class="num">011-632-5140</span></a></div>
+<article class="card" data-company="パブレPCヘルプデスク" data-search="損保 パブレPCヘルプデスク    貸与PCのWindows不具合等 011-632-5140" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">パブレPCヘルプデスク</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta"></div>
+<div class="actions"><a class="btn" href="tel:0116325140"><span class="label">☎️ 貸与PCのWindows不具合等</span><br/><span class="num">011-632-5140</span></a></div>
 </article>
-<article class="card" data-type="損保" data-company="パブレ営業部" data-search="損保 パブレ営業部    意向把握・週次報告等に関する問い合わせ 011-804-8880">
-  <div class="cardTop"><div><div class="badge">損保</div><h2 class="company">パブレ営業部</h2></div><button class="fav" type="button" aria-label="お気に入り">☆</button></div>
-  <div class="meta"></div>
-  <div class="actions"><a class="btn" href="tel:0118048880"><span class="label">☎️ 意向把握・週次報告等に関する問い合わせ</span><br><span class="num">011-804-8880</span></a></div>
+<article class="card" data-company="パブレ営業部" data-search="損保 パブレ営業部    意向把握・週次報告等に関する問い合わせ 011-804-8880" data-type="損保">
+<div class="cardTop"><div><div class="badge">損保</div><h2 class="company">パブレ営業部</h2></div><button aria-label="お気に入り" class="fav" type="button">☆</button></div>
+<div class="meta"></div>
+<div class="actions"><a class="btn" href="tel:0118048880"><span class="label">☎️ 意向把握・週次報告等に関する問い合わせ</span><br/><span class="num">011-804-8880</span></a></div>
 </article>
-  </div>
-  <div id="empty" class="empty">該当する連絡先がありません</div>
+</div>
+<div class="empty" id="empty">該当する連絡先がありません</div>
 </main>
-<div class="footer">元資料：浜松営業所 生保・損保 連絡先一覧 2026/6/4<br>代理店コード以外の個人コードは顧客ネットのコード表を参照</div>
+<div class="footer">元資料：浜松営業所 生保・損保 連絡先一覧 2026/6/4<br/>代理店コード以外の個人コードは顧客ネットのコード表を参照</div>
 <script>
 let currentTab='all';
 const favKey='insuranceContactFavorites_v20260604';
